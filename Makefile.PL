@@ -11,8 +11,7 @@ cc_warnings;
 
 test_requires 'Test::More' => 0.88; # done_testing()
 
-tests 't/*.t', 't/*/*.t';
-author_tests 'xt';
+tests_recursive 't';
 
 auto_set_repository() if -d '.git';
 
