@@ -35,7 +35,7 @@ This document describes Keyword::Boolean version 0.001.
 Keyword::Boolean provides two keywords: B<true> and B<false>.
 
 They are I<real> keywords introduced by the C<PL_keyword_plugin> mechanism,
-not by keyword-like subroutines nor by source filters, so you cannot I<call>
+not by constant subroutines nor by source filters, so you cannot I<call>
 them as subroutines.
 
 =head1 DEPENDENCIES
@@ -60,7 +60,7 @@ Goro Fuji (gfx) E<lt>gfuji(at)cpan.orgE<gt>
 
 =head1 LICENSE AND COPYRIGHT
 
-Copyright (c) 2009, Goro Fuji (gfx). Some rights reserved.
+Copyright (c) 2010, Goro Fuji (gfx). All rights reserved.
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.
