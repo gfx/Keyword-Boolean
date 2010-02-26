@@ -41,7 +41,7 @@ THX_keyword_disable(pTHX_ SV* hintkey)
     if(!GvHV(PL_hintgv)) {
         return;
     }
-    hv_delete_ent(GvHV(PL_hintgv), hintkey, G_DISCARD, 0U);
+    (void)hv_delete_ent(GvHV(PL_hintgv), hintkey, G_DISCARD, 0U);
 
     PL_hints |= HINT_LOCALIZE_HH;
 }
